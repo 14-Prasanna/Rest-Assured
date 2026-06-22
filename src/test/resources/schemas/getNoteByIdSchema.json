@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": ["success", "data"],
+  "properties": {
+    "success": { "type": "boolean" },
+    "data": {
+      "type": "object",
+      "required": ["title", "content", "tags", "isPinned", "color", "_id", "lastEdited"],
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "isPinned": { "type": "boolean" },
+        "color": { "type": "string" },
+        "_id": { "type": "string" },
+        "lastEdited": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": ["success", "message", "data"],
+  "properties": {
+    "success": { "type": "boolean" },
+    "message": { "type": "string" },
+    "data": {
+      "type": "object",
+      "required": ["title", "isPinned", "color", "_id", "lastEdited"],
+      "properties": {
+        "title": { "type": "string" },
+        "isPinned": { "type": "boolean" },
+        "color": { "type": "string" },
+        "_id": { "type": "string" },
+        "lastEdited": { "type": "string" }
+      }
+    }
+  }
+}

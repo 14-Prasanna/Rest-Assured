@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["success", "message", "deletedCount", "deletedIds"],
+  "properties": {
+    "success": { "type": "boolean" },
+    "message": { "type": "string" },
+    "deletedCount": { "type": "integer" },
+    "deletedIds": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

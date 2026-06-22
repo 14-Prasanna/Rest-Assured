@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": ["message", "roles"],
+  "properties": {
+    "message": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "value"],
+        "properties": {
+          "key": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["_id", "originalRole", "roleValue"],
+        "properties": {
+          "_id": { "type": "string" },
+          "originalRole": { "type": "string" },
+          "roleValue": { "type": "string" }
+        }
+      }
+    }
+  }
+}

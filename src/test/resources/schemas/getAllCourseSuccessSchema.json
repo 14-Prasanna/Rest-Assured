@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "required": ["message", "data"],
+  "properties": {
+    "message": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "value"],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "data": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "_id",
+          "courseName",
+          "courseCode",
+          "category",
+          "courseLevel",
+          "institution"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "courseName": {
+            "type": "string"
+          },
+          "courseCode": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "courseLevel": {
+            "type": "string"
+          },
+          "institution": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

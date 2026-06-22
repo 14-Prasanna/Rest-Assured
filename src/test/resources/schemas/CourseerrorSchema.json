@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": ["success", "message", "data"],
+  "properties": {
+    "success": { "type": "boolean" },
+    "message": { "type": "string" },
+    "data": {
+      "type": "object",
+      "required": [
+        "title",
+        "content",
+        "tags",
+        "isPinned",
+        "color",
+        "lastEdited",
+        "_id",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "isPinned": { "type": "boolean" },
+        "color": { "type": "string" },
+        "lastEdited": { "type": "string" },
+        "_id": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}

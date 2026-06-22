@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "required": ["message", "getAllInstitution"],
+  "properties": {
+    "message": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "value"],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "getAllInstitution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "_id",
+          "inst_id",
+          "inst_name",
+          "inst_owner",
+          "phone",
+          "address",
+          "createdAt",
+          "createdBy",
+          "__v"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "inst_id": {
+            "type": "string"
+          },
+          "inst_name": {
+            "type": "string"
+          },
+          "inst_owner": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "createdBy": {
+            "type": "string"
+          },
+          "__v": {
+            "type": "integer"
+          },
+          "basedOn": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

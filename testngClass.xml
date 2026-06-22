@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Test Suite">
+
+    <test name="Health API Test">
+        <classes>
+            <class name="tests.HealthTest"></class>
+            <class name="tests.GetRolesTest"></class>
+            <class name="tests.LoginTest"></class>
+            <class name="tests.GetInstitutionTest"></class>
+            <class name="tests.NoteCreationTest"></class>
+            <class name="tests.GetRolesTest"></class>
+            <class name="tests.GetAllCourseTest"></class>
+            <class name="tests.GetAllNotesTest"></class>
+            <class name="tests.DeleteNoteTest"></class>
+
+        </classes>
+
+    </test>
+
+</suite>
